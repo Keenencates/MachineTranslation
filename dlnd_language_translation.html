@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,8 +11771,7 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11786,7 +11783,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11806,8 +11803,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11818,7 +11814,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">view_sentence_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
@@ -11848,9 +11844,53 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Dataset Stats
+Roughly the number of unique words: 227
+Number of sentences: 137861
+Average number of words in a sentence: 13.225277634719028
+
+English sentences 0 to 10:
+new jersey is sometimes quiet during autumn , and it is snowy in april .
+the united states is usually chilly during july , and it is usually freezing in november .
+california is usually quiet during march , and it is usually hot in june .
+the united states is sometimes mild during june , and it is cold in september .
+your least liked fruit is the grape , but my least liked is the apple .
+his favorite fruit is the orange , but my favorite is the grape .
+paris is relaxing during december , but it is usually chilly in july .
+new jersey is busy during spring , and it is never hot in march .
+our least liked fruit is the lemon , but my least liked is the grape .
+the united states is sometimes busy during january , and it is sometimes warm in november .
+
+French sentences 0 to 10:
+new jersey est parfois calme pendant l&#39; automne , et il est neigeux en avril .
+les états-unis est généralement froid en juillet , et il gèle habituellement en novembre .
+california est généralement calme en mars , et il est généralement chaud en juin .
+les états-unis est parfois légère en juin , et il fait froid en septembre .
+votre moins aimé fruit est le raisin , mais mon moins aimé est la pomme .
+son fruit préféré est l&#39;orange , mais mon préféré est le raisin .
+paris est relaxant en décembre , mais il est généralement froid en juillet .
+new jersey est occupé au printemps , et il est jamais chaude en mars .
+notre fruit est moins aimé le citron , mais mon moins aimé est le raisin .
+les états-unis est parfois occupé en janvier , et il est parfois chaud en novembre .
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11865,7 +11905,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">text_to_ids</span><span class="p">(</span><span class="n">source_text</span><span class="p">,</span> <span class="n">target_text</span><span class="p">,</span> <span class="n">source_vocab_to_int</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">):</span>
@@ -11892,9 +11932,26 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11905,7 +11962,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11919,8 +11976,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11931,7 +11987,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11949,8 +12005,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11961,7 +12016,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11987,9 +12042,27 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>TensorFlow Version: 1.1.0
+Default GPU Device: /gpu:0
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12020,7 +12093,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_inputs</span><span class="p">():</span>
@@ -12050,9 +12123,26 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12063,7 +12153,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_decoder_input</span><span class="p">(</span><span class="n">target_data</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">):</span>
@@ -12089,9 +12179,26 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12107,7 +12214,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">imp</span> <span class="k">import</span> <span class="n">reload</span>
@@ -12147,9 +12254,26 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12165,7 +12289,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer_train</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embed_input</span><span class="p">,</span> 
@@ -12206,9 +12330,26 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12224,7 +12365,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer_infer</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">start_of_sequence_id</span><span class="p">,</span>
@@ -12269,9 +12410,26 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12290,7 +12448,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer</span><span class="p">(</span><span class="n">dec_input</span><span class="p">,</span> <span class="n">encoder_state</span><span class="p">,</span>
@@ -12344,9 +12502,26 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12362,7 +12537,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">seq2seq_model</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">target_data</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span>
@@ -12409,9 +12584,26 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12433,7 +12625,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Number of Epochs</span>
@@ -12451,7 +12643,7 @@ div#notebook {
 <span class="n">learning_rate</span> <span class="o">=</span> <span class="o">.</span><span class="mi">001</span>
 <span class="c1"># Dropout Keep Probability</span>
 <span class="n">keep_probability</span> <span class="o">=</span> <span class="o">.</span><span class="mi">8</span>
-<span class="n">display_step</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">display_step</span> <span class="o">=</span> <span class="mi">100</span>
 </pre></div>
 
 </div>
@@ -12459,8 +12651,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12471,7 +12662,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12530,8 +12721,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12542,7 +12732,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12584,8 +12774,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12596,7 +12785,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12684,9 +12873,241 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Epoch   0 Batch  100/4308 - Train Accuracy: 0.4161, Validation Accuracy: 0.3684, Loss: 2.6409
+Epoch   0 Batch  200/4308 - Train Accuracy: 0.4286, Validation Accuracy: 0.3635, Loss: 2.0454
+Epoch   0 Batch  300/4308 - Train Accuracy: 0.3576, Validation Accuracy: 0.3273, Loss: 1.7774
+Epoch   0 Batch  400/4308 - Train Accuracy: 0.3766, Validation Accuracy: 0.3898, Loss: 1.6774
+Epoch   0 Batch  500/4308 - Train Accuracy: 0.4406, Validation Accuracy: 0.4194, Loss: 1.2856
+Epoch   0 Batch  600/4308 - Train Accuracy: 0.4500, Validation Accuracy: 0.4260, Loss: 1.0684
+Epoch   0 Batch  700/4308 - Train Accuracy: 0.5219, Validation Accuracy: 0.5082, Loss: 0.9483
+Epoch   0 Batch  800/4308 - Train Accuracy: 0.5609, Validation Accuracy: 0.4737, Loss: 0.8068
+Epoch   0 Batch  900/4308 - Train Accuracy: 0.4260, Validation Accuracy: 0.5345, Loss: 0.8932
+Epoch   0 Batch 1000/4308 - Train Accuracy: 0.5280, Validation Accuracy: 0.5247, Loss: 0.8106
+Epoch   0 Batch 1100/4308 - Train Accuracy: 0.4984, Validation Accuracy: 0.5000, Loss: 0.7122
+Epoch   0 Batch 1200/4308 - Train Accuracy: 0.5172, Validation Accuracy: 0.5559, Loss: 0.8147
+Epoch   0 Batch 1300/4308 - Train Accuracy: 0.6168, Validation Accuracy: 0.5263, Loss: 0.6543
+Epoch   0 Batch 1400/4308 - Train Accuracy: 0.5411, Validation Accuracy: 0.5148, Loss: 0.7094
+Epoch   0 Batch 1500/4308 - Train Accuracy: 0.5281, Validation Accuracy: 0.5625, Loss: 0.6581
+Epoch   0 Batch 1600/4308 - Train Accuracy: 0.5115, Validation Accuracy: 0.5378, Loss: 0.6435
+Epoch   0 Batch 1700/4308 - Train Accuracy: 0.5674, Validation Accuracy: 0.5987, Loss: 0.6724
+Epoch   0 Batch 1800/4308 - Train Accuracy: 0.6062, Validation Accuracy: 0.5609, Loss: 0.5667
+Epoch   0 Batch 1900/4308 - Train Accuracy: 0.5859, Validation Accuracy: 0.5822, Loss: 0.4824
+Epoch   0 Batch 2000/4308 - Train Accuracy: 0.5954, Validation Accuracy: 0.6020, Loss: 0.5393
+Epoch   0 Batch 2100/4308 - Train Accuracy: 0.5839, Validation Accuracy: 0.5905, Loss: 0.4912
+Epoch   0 Batch 2200/4308 - Train Accuracy: 0.6365, Validation Accuracy: 0.6053, Loss: 0.5218
+Epoch   0 Batch 2300/4308 - Train Accuracy: 0.6151, Validation Accuracy: 0.6217, Loss: 0.5064
+Epoch   0 Batch 2400/4308 - Train Accuracy: 0.7250, Validation Accuracy: 0.6332, Loss: 0.3929
+Epoch   0 Batch 2500/4308 - Train Accuracy: 0.5903, Validation Accuracy: 0.6579, Loss: 0.4474
+Epoch   0 Batch 2600/4308 - Train Accuracy: 0.7406, Validation Accuracy: 0.6760, Loss: 0.3724
+Epoch   0 Batch 2700/4308 - Train Accuracy: 0.6891, Validation Accuracy: 0.6859, Loss: 0.3604
+Epoch   0 Batch 2800/4308 - Train Accuracy: 0.6661, Validation Accuracy: 0.6382, Loss: 0.3317
+Epoch   0 Batch 2900/4308 - Train Accuracy: 0.7604, Validation Accuracy: 0.7072, Loss: 0.3634
+Epoch   0 Batch 3000/4308 - Train Accuracy: 0.7188, Validation Accuracy: 0.7122, Loss: 0.3283
+Epoch   0 Batch 3100/4308 - Train Accuracy: 0.7500, Validation Accuracy: 0.7500, Loss: 0.2967
+Epoch   0 Batch 3200/4308 - Train Accuracy: 0.7000, Validation Accuracy: 0.7401, Loss: 0.3051
+Epoch   0 Batch 3300/4308 - Train Accuracy: 0.7533, Validation Accuracy: 0.7730, Loss: 0.2920
+Epoch   0 Batch 3400/4308 - Train Accuracy: 0.7484, Validation Accuracy: 0.7599, Loss: 0.2252
+Epoch   0 Batch 3500/4308 - Train Accuracy: 0.7469, Validation Accuracy: 0.8355, Loss: 0.2708
+Epoch   0 Batch 3600/4308 - Train Accuracy: 0.8322, Validation Accuracy: 0.7862, Loss: 0.2156
+Epoch   0 Batch 3700/4308 - Train Accuracy: 0.8158, Validation Accuracy: 0.7878, Loss: 0.1998
+Epoch   0 Batch 3800/4308 - Train Accuracy: 0.8405, Validation Accuracy: 0.8092, Loss: 0.1656
+Epoch   0 Batch 3900/4308 - Train Accuracy: 0.8191, Validation Accuracy: 0.8224, Loss: 0.1578
+Epoch   0 Batch 4000/4308 - Train Accuracy: 0.9010, Validation Accuracy: 0.8059, Loss: 0.1531
+Epoch   0 Batch 4100/4308 - Train Accuracy: 0.8562, Validation Accuracy: 0.9062, Loss: 0.1462
+Epoch   0 Batch 4200/4308 - Train Accuracy: 0.8656, Validation Accuracy: 0.8964, Loss: 0.1201
+Epoch   0 Batch 4300/4308 - Train Accuracy: 0.8750, Validation Accuracy: 0.8635, Loss: 0.1483
+Epoch   1 Batch  100/4308 - Train Accuracy: 0.8059, Validation Accuracy: 0.8355, Loss: 0.1312
+Epoch   1 Batch  200/4308 - Train Accuracy: 0.9405, Validation Accuracy: 0.8750, Loss: 0.0786
+Epoch   1 Batch  300/4308 - Train Accuracy: 0.8802, Validation Accuracy: 0.8964, Loss: 0.1108
+Epoch   1 Batch  400/4308 - Train Accuracy: 0.9227, Validation Accuracy: 0.8487, Loss: 0.1162
+Epoch   1 Batch  500/4308 - Train Accuracy: 0.9266, Validation Accuracy: 0.8849, Loss: 0.1043
+Epoch   1 Batch  600/4308 - Train Accuracy: 0.9141, Validation Accuracy: 0.9046, Loss: 0.0606
+Epoch   1 Batch  700/4308 - Train Accuracy: 0.9141, Validation Accuracy: 0.8849, Loss: 0.0680
+Epoch   1 Batch  800/4308 - Train Accuracy: 0.9469, Validation Accuracy: 0.9013, Loss: 0.0416
+Epoch   1 Batch  900/4308 - Train Accuracy: 0.9079, Validation Accuracy: 0.8898, Loss: 0.0671
+Epoch   1 Batch 1000/4308 - Train Accuracy: 0.9095, Validation Accuracy: 0.8914, Loss: 0.0819
+Epoch   1 Batch 1100/4308 - Train Accuracy: 0.9281, Validation Accuracy: 0.8865, Loss: 0.0613
+Epoch   1 Batch 1200/4308 - Train Accuracy: 0.8531, Validation Accuracy: 0.9128, Loss: 0.1420
+Epoch   1 Batch 1300/4308 - Train Accuracy: 0.9095, Validation Accuracy: 0.8470, Loss: 0.0504
+Epoch   1 Batch 1400/4308 - Train Accuracy: 0.8750, Validation Accuracy: 0.8503, Loss: 0.0739
+Epoch   1 Batch 1500/4308 - Train Accuracy: 0.8750, Validation Accuracy: 0.8799, Loss: 0.0697
+Epoch   1 Batch 1600/4308 - Train Accuracy: 0.8947, Validation Accuracy: 0.8668, Loss: 0.0786
+Epoch   1 Batch 1700/4308 - Train Accuracy: 0.8750, Validation Accuracy: 0.8931, Loss: 0.0940
+Epoch   1 Batch 1800/4308 - Train Accuracy: 0.8484, Validation Accuracy: 0.8914, Loss: 0.0576
+Epoch   1 Batch 1900/4308 - Train Accuracy: 0.8984, Validation Accuracy: 0.9211, Loss: 0.0567
+Epoch   1 Batch 2000/4308 - Train Accuracy: 0.8717, Validation Accuracy: 0.9326, Loss: 0.0681
+Epoch   1 Batch 2100/4308 - Train Accuracy: 0.9309, Validation Accuracy: 0.9441, Loss: 0.0457
+Epoch   1 Batch 2200/4308 - Train Accuracy: 0.7829, Validation Accuracy: 0.9391, Loss: 0.0913
+Epoch   1 Batch 2300/4308 - Train Accuracy: 0.8832, Validation Accuracy: 0.8997, Loss: 0.0834
+Epoch   1 Batch 2400/4308 - Train Accuracy: 0.9719, Validation Accuracy: 0.9161, Loss: 0.0447
+Epoch   1 Batch 2500/4308 - Train Accuracy: 0.9549, Validation Accuracy: 0.9145, Loss: 0.0625
+Epoch   1 Batch 2600/4308 - Train Accuracy: 0.9469, Validation Accuracy: 0.9243, Loss: 0.0429
+Epoch   1 Batch 2700/4308 - Train Accuracy: 0.9500, Validation Accuracy: 0.9556, Loss: 0.0576
+Epoch   1 Batch 2800/4308 - Train Accuracy: 0.9359, Validation Accuracy: 0.9046, Loss: 0.0556
+Epoch   1 Batch 2900/4308 - Train Accuracy: 0.8958, Validation Accuracy: 0.9622, Loss: 0.0820
+Epoch   1 Batch 3000/4308 - Train Accuracy: 0.9156, Validation Accuracy: 0.9523, Loss: 0.0487
+Epoch   1 Batch 3100/4308 - Train Accuracy: 0.9523, Validation Accuracy: 0.9605, Loss: 0.0469
+Epoch   1 Batch 3200/4308 - Train Accuracy: 0.9141, Validation Accuracy: 0.9474, Loss: 0.0588
+Epoch   1 Batch 3300/4308 - Train Accuracy: 0.9145, Validation Accuracy: 0.9671, Loss: 0.0528
+Epoch   1 Batch 3400/4308 - Train Accuracy: 0.9375, Validation Accuracy: 0.9951, Loss: 0.0361
+Epoch   1 Batch 3500/4308 - Train Accuracy: 0.9453, Validation Accuracy: 0.9474, Loss: 0.0795
+Epoch   1 Batch 3600/4308 - Train Accuracy: 0.9507, Validation Accuracy: 0.9572, Loss: 0.0583
+Epoch   1 Batch 3700/4308 - Train Accuracy: 0.9062, Validation Accuracy: 0.9227, Loss: 0.0376
+Epoch   1 Batch 3800/4308 - Train Accuracy: 0.9951, Validation Accuracy: 0.9671, Loss: 0.0271
+Epoch   1 Batch 3900/4308 - Train Accuracy: 0.9441, Validation Accuracy: 0.9704, Loss: 0.0534
+Epoch   1 Batch 4000/4308 - Train Accuracy: 0.9531, Validation Accuracy: 0.9178, Loss: 0.0499
+Epoch   1 Batch 4100/4308 - Train Accuracy: 0.9422, Validation Accuracy: 0.9211, Loss: 0.0462
+Epoch   1 Batch 4200/4308 - Train Accuracy: 0.9531, Validation Accuracy: 0.9490, Loss: 0.0308
+Epoch   1 Batch 4300/4308 - Train Accuracy: 0.9469, Validation Accuracy: 0.9441, Loss: 0.0574
+Epoch   2 Batch  100/4308 - Train Accuracy: 0.9194, Validation Accuracy: 0.9539, Loss: 0.0378
+Epoch   2 Batch  200/4308 - Train Accuracy: 0.9762, Validation Accuracy: 0.9622, Loss: 0.0184
+Epoch   2 Batch  300/4308 - Train Accuracy: 0.9427, Validation Accuracy: 0.9605, Loss: 0.0438
+Epoch   2 Batch  400/4308 - Train Accuracy: 0.9868, Validation Accuracy: 0.9688, Loss: 0.0335
+Epoch   2 Batch  500/4308 - Train Accuracy: 0.9625, Validation Accuracy: 0.9885, Loss: 0.0539
+Epoch   2 Batch  600/4308 - Train Accuracy: 0.9547, Validation Accuracy: 0.9934, Loss: 0.0237
+Epoch   2 Batch  700/4308 - Train Accuracy: 0.9156, Validation Accuracy: 0.9457, Loss: 0.0244
+Epoch   2 Batch  800/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9786, Loss: 0.0096
+Epoch   2 Batch  900/4308 - Train Accuracy: 0.9276, Validation Accuracy: 0.9490, Loss: 0.0264
+Epoch   2 Batch 1000/4308 - Train Accuracy: 0.9424, Validation Accuracy: 0.9967, Loss: 0.0332
+Epoch   2 Batch 1100/4308 - Train Accuracy: 0.9797, Validation Accuracy: 0.9474, Loss: 0.0168
+Epoch   2 Batch 1200/4308 - Train Accuracy: 0.9453, Validation Accuracy: 0.9984, Loss: 0.0558
+Epoch   2 Batch 1300/4308 - Train Accuracy: 0.9638, Validation Accuracy: 0.9523, Loss: 0.0187
+Epoch   2 Batch 1400/4308 - Train Accuracy: 0.9539, Validation Accuracy: 0.9770, Loss: 0.0454
+Epoch   2 Batch 1500/4308 - Train Accuracy: 0.9187, Validation Accuracy: 0.9539, Loss: 0.0378
+Epoch   2 Batch 1600/4308 - Train Accuracy: 0.9424, Validation Accuracy: 0.9720, Loss: 0.0335
+Epoch   2 Batch 1700/4308 - Train Accuracy: 0.9424, Validation Accuracy: 0.9753, Loss: 0.0397
+Epoch   2 Batch 1800/4308 - Train Accuracy: 0.9578, Validation Accuracy: 0.9753, Loss: 0.0294
+Epoch   2 Batch 1900/4308 - Train Accuracy: 0.9234, Validation Accuracy: 0.9786, Loss: 0.0296
+Epoch   2 Batch 2000/4308 - Train Accuracy: 0.9605, Validation Accuracy: 0.9984, Loss: 0.0246
+Epoch   2 Batch 2100/4308 - Train Accuracy: 0.9885, Validation Accuracy: 0.9770, Loss: 0.0147
+Epoch   2 Batch 2200/4308 - Train Accuracy: 0.8783, Validation Accuracy: 0.9753, Loss: 0.0504
+Epoch   2 Batch 2300/4308 - Train Accuracy: 0.8865, Validation Accuracy: 0.9589, Loss: 0.0525
+Epoch   2 Batch 2400/4308 - Train Accuracy: 0.9609, Validation Accuracy: 0.9918, Loss: 0.0213
+Epoch   2 Batch 2500/4308 - Train Accuracy: 0.9410, Validation Accuracy: 0.9918, Loss: 0.0316
+Epoch   2 Batch 2600/4308 - Train Accuracy: 0.9766, Validation Accuracy: 0.9457, Loss: 0.0231
+Epoch   2 Batch 2700/4308 - Train Accuracy: 0.9406, Validation Accuracy: 0.9572, Loss: 0.0327
+Epoch   2 Batch 2800/4308 - Train Accuracy: 0.9753, Validation Accuracy: 0.9984, Loss: 0.0271
+Epoch   2 Batch 2900/4308 - Train Accuracy: 0.9774, Validation Accuracy: 0.9737, Loss: 0.0410
+Epoch   2 Batch 3000/4308 - Train Accuracy: 0.9703, Validation Accuracy: 0.9984, Loss: 0.0208
+Epoch   2 Batch 3100/4308 - Train Accuracy: 0.9589, Validation Accuracy: 0.9984, Loss: 0.0272
+Epoch   2 Batch 3200/4308 - Train Accuracy: 0.9250, Validation Accuracy: 0.9720, Loss: 0.0269
+Epoch   2 Batch 3300/4308 - Train Accuracy: 0.9441, Validation Accuracy: 0.9868, Loss: 0.0242
+Epoch   2 Batch 3400/4308 - Train Accuracy: 0.9234, Validation Accuracy: 0.9967, Loss: 0.0289
+Epoch   2 Batch 3500/4308 - Train Accuracy: 0.9453, Validation Accuracy: 0.9901, Loss: 0.0571
+Epoch   2 Batch 3600/4308 - Train Accuracy: 0.9868, Validation Accuracy: 0.9967, Loss: 0.0320
+Epoch   2 Batch 3700/4308 - Train Accuracy: 0.9852, Validation Accuracy: 0.9753, Loss: 0.0192
+Epoch   2 Batch 3800/4308 - Train Accuracy: 0.9786, Validation Accuracy: 0.9786, Loss: 0.0183
+Epoch   2 Batch 3900/4308 - Train Accuracy: 0.9539, Validation Accuracy: 0.9770, Loss: 0.0337
+Epoch   2 Batch 4000/4308 - Train Accuracy: 0.9583, Validation Accuracy: 0.9539, Loss: 0.0260
+Epoch   2 Batch 4100/4308 - Train Accuracy: 0.9828, Validation Accuracy: 0.9720, Loss: 0.0223
+Epoch   2 Batch 4200/4308 - Train Accuracy: 0.9313, Validation Accuracy: 0.9507, Loss: 0.0254
+Epoch   2 Batch 4300/4308 - Train Accuracy: 0.9953, Validation Accuracy: 0.9572, Loss: 0.0310
+Epoch   3 Batch  100/4308 - Train Accuracy: 0.9474, Validation Accuracy: 0.9753, Loss: 0.0248
+Epoch   3 Batch  200/4308 - Train Accuracy: 0.9792, Validation Accuracy: 0.9786, Loss: 0.0095
+Epoch   3 Batch  300/4308 - Train Accuracy: 0.9653, Validation Accuracy: 0.9786, Loss: 0.0287
+Epoch   3 Batch  400/4308 - Train Accuracy: 0.9819, Validation Accuracy: 0.9901, Loss: 0.0181
+Epoch   3 Batch  500/4308 - Train Accuracy: 0.9672, Validation Accuracy: 0.9523, Loss: 0.0315
+Epoch   3 Batch  600/4308 - Train Accuracy: 0.9563, Validation Accuracy: 0.9901, Loss: 0.0152
+Epoch   3 Batch  700/4308 - Train Accuracy: 0.9719, Validation Accuracy: 0.9457, Loss: 0.0143
+Epoch   3 Batch  800/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9984, Loss: 0.0067
+Epoch   3 Batch  900/4308 - Train Accuracy: 0.9408, Validation Accuracy: 0.9720, Loss: 0.0199
+Epoch   3 Batch 1000/4308 - Train Accuracy: 0.9720, Validation Accuracy: 0.9967, Loss: 0.0255
+Epoch   3 Batch 1100/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9572, Loss: 0.0063
+Epoch   3 Batch 1200/4308 - Train Accuracy: 0.9375, Validation Accuracy: 0.9984, Loss: 0.0360
+Epoch   3 Batch 1300/4308 - Train Accuracy: 0.9457, Validation Accuracy: 0.9753, Loss: 0.0137
+Epoch   3 Batch 1400/4308 - Train Accuracy: 0.9507, Validation Accuracy: 0.9539, Loss: 0.0274
+Epoch   3 Batch 1500/4308 - Train Accuracy: 0.9531, Validation Accuracy: 0.9737, Loss: 0.0211
+Epoch   3 Batch 1600/4308 - Train Accuracy: 0.9638, Validation Accuracy: 0.9490, Loss: 0.0204
+Epoch   3 Batch 1700/4308 - Train Accuracy: 0.9391, Validation Accuracy: 0.9737, Loss: 0.0231
+Epoch   3 Batch 1800/4308 - Train Accuracy: 0.9563, Validation Accuracy: 0.9704, Loss: 0.0207
+Epoch   3 Batch 1900/4308 - Train Accuracy: 0.9531, Validation Accuracy: 0.9984, Loss: 0.0188
+Epoch   3 Batch 2000/4308 - Train Accuracy: 0.9507, Validation Accuracy: 0.9967, Loss: 0.0157
+Epoch   3 Batch 2100/4308 - Train Accuracy: 0.9819, Validation Accuracy: 0.9753, Loss: 0.0155
+Epoch   3 Batch 2200/4308 - Train Accuracy: 0.9145, Validation Accuracy: 0.9441, Loss: 0.0326
+Epoch   3 Batch 2300/4308 - Train Accuracy: 0.9276, Validation Accuracy: 0.9655, Loss: 0.0353
+Epoch   3 Batch 2400/4308 - Train Accuracy: 0.9625, Validation Accuracy: 0.9984, Loss: 0.0141
+Epoch   3 Batch 2500/4308 - Train Accuracy: 0.9392, Validation Accuracy: 0.9984, Loss: 0.0241
+Epoch   3 Batch 2600/4308 - Train Accuracy: 0.9984, Validation Accuracy: 0.9737, Loss: 0.0121
+Epoch   3 Batch 2700/4308 - Train Accuracy: 0.9766, Validation Accuracy: 0.9770, Loss: 0.0223
+Epoch   3 Batch 2800/4308 - Train Accuracy: 0.9770, Validation Accuracy: 0.9490, Loss: 0.0205
+Epoch   3 Batch 2900/4308 - Train Accuracy: 0.9531, Validation Accuracy: 0.9424, Loss: 0.0335
+Epoch   3 Batch 3000/4308 - Train Accuracy: 0.9969, Validation Accuracy: 0.9737, Loss: 0.0157
+Epoch   3 Batch 3100/4308 - Train Accuracy: 0.9704, Validation Accuracy: 0.9753, Loss: 0.0171
+Epoch   3 Batch 3200/4308 - Train Accuracy: 0.9219, Validation Accuracy: 0.9704, Loss: 0.0223
+Epoch   3 Batch 3300/4308 - Train Accuracy: 0.9523, Validation Accuracy: 0.9934, Loss: 0.0172
+Epoch   3 Batch 3400/4308 - Train Accuracy: 0.9500, Validation Accuracy: 0.9967, Loss: 0.0113
+Epoch   3 Batch 3500/4308 - Train Accuracy: 0.9578, Validation Accuracy: 0.9671, Loss: 0.0340
+Epoch   3 Batch 3600/4308 - Train Accuracy: 0.9622, Validation Accuracy: 0.9984, Loss: 0.0185
+Epoch   3 Batch 3700/4308 - Train Accuracy: 0.9852, Validation Accuracy: 0.9490, Loss: 0.0161
+Epoch   3 Batch 3800/4308 - Train Accuracy: 0.9836, Validation Accuracy: 0.9770, Loss: 0.0086
+Epoch   3 Batch 3900/4308 - Train Accuracy: 0.9556, Validation Accuracy: 0.9770, Loss: 0.0181
+Epoch   3 Batch 4000/4308 - Train Accuracy: 0.9844, Validation Accuracy: 0.9770, Loss: 0.0232
+Epoch   3 Batch 4100/4308 - Train Accuracy: 0.9828, Validation Accuracy: 0.9984, Loss: 0.0227
+Epoch   3 Batch 4200/4308 - Train Accuracy: 0.9281, Validation Accuracy: 0.9737, Loss: 0.0226
+Epoch   3 Batch 4300/4308 - Train Accuracy: 0.9953, Validation Accuracy: 0.9572, Loss: 0.0217
+Epoch   4 Batch  100/4308 - Train Accuracy: 0.9737, Validation Accuracy: 0.9770, Loss: 0.0177
+Epoch   4 Batch  200/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9984, Loss: 0.0061
+Epoch   4 Batch  300/4308 - Train Accuracy: 0.9705, Validation Accuracy: 0.9786, Loss: 0.0227
+Epoch   4 Batch  400/4308 - Train Accuracy: 0.9984, Validation Accuracy: 0.9688, Loss: 0.0118
+Epoch   4 Batch  500/4308 - Train Accuracy: 0.9719, Validation Accuracy: 0.9770, Loss: 0.0243
+Epoch   4 Batch  600/4308 - Train Accuracy: 0.9563, Validation Accuracy: 0.9951, Loss: 0.0110
+Epoch   4 Batch  700/4308 - Train Accuracy: 0.9781, Validation Accuracy: 0.9967, Loss: 0.0095
+Epoch   4 Batch  800/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9984, Loss: 0.0035
+Epoch   4 Batch  900/4308 - Train Accuracy: 0.9408, Validation Accuracy: 0.9984, Loss: 0.0174
+Epoch   4 Batch 1000/4308 - Train Accuracy: 0.9704, Validation Accuracy: 0.9737, Loss: 0.0150
+Epoch   4 Batch 1100/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9984, Loss: 0.0033
+Epoch   4 Batch 1200/4308 - Train Accuracy: 0.9625, Validation Accuracy: 0.9984, Loss: 0.0319
+Epoch   4 Batch 1300/4308 - Train Accuracy: 0.9770, Validation Accuracy: 0.9984, Loss: 0.0087
+Epoch   4 Batch 1400/4308 - Train Accuracy: 0.9638, Validation Accuracy: 0.9770, Loss: 0.0245
+Epoch   4 Batch 1500/4308 - Train Accuracy: 0.9547, Validation Accuracy: 0.9753, Loss: 0.0250
+Epoch   4 Batch 1600/4308 - Train Accuracy: 0.9572, Validation Accuracy: 0.9967, Loss: 0.0165
+Epoch   4 Batch 1700/4308 - Train Accuracy: 0.9671, Validation Accuracy: 0.9490, Loss: 0.0133
+Epoch   4 Batch 1800/4308 - Train Accuracy: 0.9766, Validation Accuracy: 0.9984, Loss: 0.0132
+Epoch   4 Batch 1900/4308 - Train Accuracy: 0.9516, Validation Accuracy: 0.9984, Loss: 0.0186
+Epoch   4 Batch 2000/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9967, Loss: 0.0082
+Epoch   4 Batch 2100/4308 - Train Accuracy: 0.9803, Validation Accuracy: 0.9753, Loss: 0.0095
+Epoch   4 Batch 2200/4308 - Train Accuracy: 0.9276, Validation Accuracy: 0.9967, Loss: 0.0290
+Epoch   4 Batch 2300/4308 - Train Accuracy: 0.9688, Validation Accuracy: 0.9951, Loss: 0.0294
+Epoch   4 Batch 2400/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9984, Loss: 0.0056
+Epoch   4 Batch 2500/4308 - Train Accuracy: 0.9688, Validation Accuracy: 0.9984, Loss: 0.0153
+Epoch   4 Batch 2600/4308 - Train Accuracy: 0.9984, Validation Accuracy: 0.9885, Loss: 0.0077
+Epoch   4 Batch 2700/4308 - Train Accuracy: 0.9672, Validation Accuracy: 0.9770, Loss: 0.0145
+Epoch   4 Batch 2800/4308 - Train Accuracy: 0.9770, Validation Accuracy: 0.9967, Loss: 0.0141
+Epoch   4 Batch 2900/4308 - Train Accuracy: 0.9531, Validation Accuracy: 0.9655, Loss: 0.0274
+Epoch   4 Batch 3000/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9984, Loss: 0.0073
+Epoch   4 Batch 3100/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9984, Loss: 0.0091
+Epoch   4 Batch 3200/4308 - Train Accuracy: 0.9266, Validation Accuracy: 0.9819, Loss: 0.0151
+Epoch   4 Batch 3300/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9868, Loss: 0.0093
+Epoch   4 Batch 3400/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9984, Loss: 0.0058
+Epoch   4 Batch 3500/4308 - Train Accuracy: 0.9594, Validation Accuracy: 0.9671, Loss: 0.0304
+Epoch   4 Batch 3600/4308 - Train Accuracy: 1.0000, Validation Accuracy: 0.9967, Loss: 0.0126
+Epoch   4 Batch 3700/4308 - Train Accuracy: 0.9770, Validation Accuracy: 0.9984, Loss: 0.0092
+Epoch   4 Batch 3800/4308 - Train Accuracy: 0.9852, Validation Accuracy: 0.9753, Loss: 0.0080
+Epoch   4 Batch 3900/4308 - Train Accuracy: 0.9704, Validation Accuracy: 0.9770, Loss: 0.0158
+Epoch   4 Batch 4000/4308 - Train Accuracy: 0.9861, Validation Accuracy: 0.9523, Loss: 0.0159
+Epoch   4 Batch 4100/4308 - Train Accuracy: 0.9578, Validation Accuracy: 0.9967, Loss: 0.0179
+Epoch   4 Batch 4200/4308 - Train Accuracy: 0.9531, Validation Accuracy: 0.9276, Loss: 0.0163
+Epoch   4 Batch 4300/4308 - Train Accuracy: 0.9906, Validation Accuracy: 0.9770, Loss: 0.0164
+Model Trained and Saved
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12697,7 +13118,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12711,32 +13132,8 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-4-466fdc464732&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> &#34;&#34;&#34;
-<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-red-fg"># Save parameters for checkpoint</span>
-<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg"> </span>helper<span class="ansi-blue-fg">.</span>save_params<span class="ansi-blue-fg">(</span>save_path<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;save_path&#39; is not defined</pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12746,7 +13143,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12766,8 +13163,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12785,7 +13181,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sentence_to_seq</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">vocab_to_int</span><span class="p">):</span>
@@ -12813,7 +13209,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Tests Passed
@@ -12825,8 +13223,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12837,41 +13234,42 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">translate_sentence</span> <span class="o">=</span> <span class="s1">&#39;he saw a old yellow truck .&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">translate</span><span class="p">(</span><span class="n">translate_sentence</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    DON&#39;T MODIFY ANYTHING IN THIS CELL</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">translate_sentence</span> <span class="o">=</span> <span class="n">sentence_to_seq</span><span class="p">(</span><span class="n">translate_sentence</span><span class="p">,</span> <span class="n">source_vocab_to_int</span><span class="p">)</span>
 
+    <span class="n">loaded_graph</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
+    <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">(</span><span class="n">graph</span><span class="o">=</span><span class="n">loaded_graph</span><span class="p">)</span> <span class="k">as</span> <span class="n">sess</span><span class="p">:</span>
+        <span class="c1"># Load saved model</span>
+        <span class="n">loader</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">import_meta_graph</span><span class="p">(</span><span class="n">load_path</span> <span class="o">+</span> <span class="s1">&#39;.meta&#39;</span><span class="p">)</span>
+        <span class="n">loader</span><span class="o">.</span><span class="n">restore</span><span class="p">(</span><span class="n">sess</span><span class="p">,</span> <span class="n">load_path</span><span class="p">)</span>
 
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">DON&#39;T MODIFY ANYTHING IN THIS CELL</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="n">translate_sentence</span> <span class="o">=</span> <span class="n">sentence_to_seq</span><span class="p">(</span><span class="n">translate_sentence</span><span class="p">,</span> <span class="n">source_vocab_to_int</span><span class="p">)</span>
+        <span class="n">input_data</span> <span class="o">=</span> <span class="n">loaded_graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;input:0&#39;</span><span class="p">)</span>
+        <span class="n">logits</span> <span class="o">=</span> <span class="n">loaded_graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;predictions:0&#39;</span><span class="p">)</span>
+        <span class="n">target_sequence_length</span> <span class="o">=</span> <span class="n">loaded_graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;target_sequence_length:0&#39;</span><span class="p">)</span>
+        <span class="n">source_sequence_length</span> <span class="o">=</span> <span class="n">loaded_graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;source_sequence_length:0&#39;</span><span class="p">)</span>
+        <span class="n">keep_prob</span> <span class="o">=</span> <span class="n">loaded_graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;keep_prob:0&#39;</span><span class="p">)</span>
 
-<span class="n">loaded_graph</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
-<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">(</span><span class="n">graph</span><span class="o">=</span><span class="n">loaded_graph</span><span class="p">)</span> <span class="k">as</span> <span class="n">sess</span><span class="p">:</span>
-    <span class="c1"># Load saved model</span>
-    <span class="n">loader</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">import_meta_graph</span><span class="p">(</span><span class="n">load_path</span> <span class="o">+</span> <span class="s1">&#39;.meta&#39;</span><span class="p">)</span>
-    <span class="n">loader</span><span class="o">.</span><span class="n">restore</span><span class="p">(</span><span class="n">sess</span><span class="p">,</span> <span class="n">load_path</span><span class="p">)</span>
+        <span class="n">translate_logits</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="p">{</span><span class="n">input_data</span><span class="p">:</span> <span class="p">[</span><span class="n">translate_sentence</span><span class="p">]</span><span class="o">*</span><span class="n">batch_size</span><span class="p">,</span>
+                                             <span class="n">target_sequence_length</span><span class="p">:</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">translate_sentence</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">batch_size</span><span class="p">,</span>
+                                             <span class="n">source_sequence_length</span><span class="p">:</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">translate_sentence</span><span class="p">)]</span><span class="o">*</span><span class="n">batch_size</span><span class="p">,</span>
+                                             <span class="n">keep_prob</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">})[</span><span class="mi">0</span><span class="p">]</span>
 
-    <span class="n">input_data</span> <span class="o">=</span> <span class="n">loaded_graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;input:0&#39;</span><span class="p">)</span>
-    <span class="n">logits</span> <span class="o">=</span> <span class="n">loaded_graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;predictions:0&#39;</span><span class="p">)</span>
-    <span class="n">target_sequence_length</span> <span class="o">=</span> <span class="n">loaded_graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;target_sequence_length:0&#39;</span><span class="p">)</span>
-    <span class="n">source_sequence_length</span> <span class="o">=</span> <span class="n">loaded_graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;source_sequence_length:0&#39;</span><span class="p">)</span>
-    <span class="n">keep_prob</span> <span class="o">=</span> <span class="n">loaded_graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;keep_prob:0&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  Word Ids:      </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_sentence</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  English Words: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">([</span><span class="n">source_int_to_vocab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_sentence</span><span class="p">]))</span>
 
-    <span class="n">translate_logits</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="p">{</span><span class="n">input_data</span><span class="p">:</span> <span class="p">[</span><span class="n">translate_sentence</span><span class="p">]</span><span class="o">*</span><span class="n">batch_size</span><span class="p">,</span>
-                                         <span class="n">target_sequence_length</span><span class="p">:</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">translate_sentence</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">batch_size</span><span class="p">,</span>
-                                         <span class="n">source_sequence_length</span><span class="p">:</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">translate_sentence</span><span class="p">)]</span><span class="o">*</span><span class="n">batch_size</span><span class="p">,</span>
-                                         <span class="n">keep_prob</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">})[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Prediction&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  Word Ids:      </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_logits</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  French Words: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">target_int_to_vocab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_logits</span><span class="p">])))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  Word Ids:      </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_sentence</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  English Words: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">([</span><span class="n">source_int_to_vocab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_sentence</span><span class="p">]))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Prediction&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  Word Ids:      </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_logits</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  French Words: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">target_int_to_vocab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">translate_logits</span><span class="p">])))</span>
+<span class="n">translate</span><span class="p">(</span><span class="s1">&#39;he saw a old yellow truck .&#39;</span><span class="p">)</span>
+<span class="n">translate</span><span class="p">(</span><span class="s1">&#39;we went to the theater .&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12883,17 +13281,27 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Restoring parameters from checkpoints/dev
 Input
-  Word Ids:      [167, 162, 187, 56, 173, 223, 104]
+  Word Ids:      [16, 88, 126, 48, 172, 159, 195]
   English Words: [&#39;he&#39;, &#39;saw&#39;, &#39;a&#39;, &#39;old&#39;, &#39;yellow&#39;, &#39;truck&#39;, &#39;.&#39;]
 
 Prediction
-  Word Ids:      [357, 341, 226, 297, 187, 280, 208, 142, 1]
-  French Words: il a vu un vieux camion jaune . &lt;EOS&gt;
+  Word Ids:      [65, 308, 91, 85, 237, 340, 47, 147, 1]
+  French Words: il a vu un vieux camion rouge . &lt;EOS&gt;
+INFO:tensorflow:Restoring parameters from checkpoints/dev
+Input
+  Word Ids:      [38, 185, 111, 225, 2, 195]
+  English Words: [&#39;we&#39;, &#39;went&#39;, &#39;to&#39;, &#39;the&#39;, &#39;&lt;UNK&gt;&#39;, &#39;.&#39;]
+
+Prediction
+  Word Ids:      [63, 239, 324, 147, 1]
+  French Words: nous fruits préféré . &lt;EOS&gt;
 </pre>
 </div>
 </div>
@@ -12902,8 +13310,7 @@ Prediction
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
